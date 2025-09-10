@@ -1,0 +1,131 @@
+.formacao {
+  background-color: #1b1b1b;
+  color: #ffffff;
+}
+
+.formacao-conteiner {
+  max-width: 1200px;
+  padding: 120px 20px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 100px;
+}
+.formacao .subtitulo {
+  color: #000000;
+  max-width: 5ch;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 42ch;
+  margin-bottom: 60px;
+  color: #a3a3a3a;
+}
+
+.faculdade-lista {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.faculdade {
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 4px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.faculdade-tipo {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+  color: #a3a3a3;
+}
+
+.faculdade-curso {
+  flex: 1;
+  font-size: 1.125rem;
+  line-height: 1.4;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.faculdade-curso::before {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 20px;
+  background-color: #ff3366;
+  top: -20px;
+  left: -10px;
+  position: relative;
+}
+
+.faculdade-instituicao {
+  font-size: 1.125rem;
+  color: #a3a3a3;
+}
+
+.cursos {
+  margin-bottom: 60px;
+}
+.formacao-extra h3 {
+  margin-left: 40px;
+  font-size: 0.875rem;
+  line-height: 1.4;
+  color: #8f8f8f;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  position: relative;
+}
+.formacao-extra h3::before {
+  content: "";
+  display: block;
+  width: 26px;
+  height: 24px;
+  background: url("../img/Book.svg") no-repeat center;
+  position: absolute;
+  top: -4px;
+  left: -40px;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  .formacao-conteiner {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 40px;
+  }
+  .formacao .subtitulo {
+    color: #ffffff;
+    font-size: 3rem;
+    max-width: initial;
+  }
+  .formacao-texto {
+    font-size: 1.25rem;
+    margin-bottom: 40px;
+  }
+  .faculdade-lista {
+    flex-direction: column;
+  }
+}
